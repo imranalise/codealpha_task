@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="gallery-container">
+      <!-- Filter Buttons -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="architecture">
+          Architecture
+        </button>
+        <button class="filter-btn" data-filter="tech">Tech</button>
+      </div>
+
+      <!-- Image Grid -->
+      <div class="gallery-grid">
+        <div class="gallery-item" data-category="nature">
+          <img
+            src="https://picsum.photos/id/1015/800/600"
+            alt="River in canyon"
+          />
+        </div>
+        <div class="gallery-item" data-category="architecture">
+          <img src="https://picsum.photos/id/1040/800/600" alt="Castle" />
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img
+            src="https://picsum.photos/id/1018/800/600"
+            alt="Mountain landscape"
+          />
+        </div>
+        <div class="gallery-item" data-category="architecture">
+          <img src="https://picsum.photos/id/122/800/600" alt="City street" />
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <img src="https://picsum.photos/id/1043/800/600" alt="Forest" />
+        </div>
+        <div class="gallery-item" data-category="architecture">
+          <img
+            src="https://picsum.photos/id/1044/800/600"
+            alt="Building exterior"
+          />
+        </div>
+        <div class="gallery-item" data-category="tech">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8ha0zBLnZARKomQQ5odVOiq7Cza2hnPHREMN0OOWHwnL2Qphmol7Gr4g&s=10"
+            alt="Tech Image"
+          />
+        </div>
+        <div class="gallery-item" data-category="tech">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/005/092/196/non_2x/abstract-future-technology-vision-design-innovation-concept-background-vector.jpg"
+            alt="Tech Image"
+          />
+        </div>
+        <div class="gallery-item" data-category="tech">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbdhz4n2PoHZ1tiygQmazDdFFbcetQYTuMZYSX-aDbBjGMbh6vFoA1GqHY&s=10"
+            alt="World Image"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+      <span class="close-btn">&times;</span>
+      <button class="nav-btn prev-btn">&#10094;</button>
+      <img class="lightbox-img" id="lightbox-img" src="" alt="Lightbox View" />
+      <button class="nav-btn next-btn">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
