@@ -1,0 +1,71 @@
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+}
+.player-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  color: white;
+  width: 350px;
+  text-align: center;
+}
+.controls button {
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  margin: 5px;
+}
+.progress-area,
+.volume-area {
+  margin: 15px 0;
+}
+.timer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+li {
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.active {
+  background: #ff7e5f;
+}
+.input-section {
+  margin-top: 20px;
+}
+
+/* Add this to style.css */
+.delete-btn {
+  background: rgba(255, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.7em;
+  margin-left: 10px;
+}
+.delete-btn:hover {
+  background: red;
+}
